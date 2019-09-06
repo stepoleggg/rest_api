@@ -8,15 +8,15 @@ pip install Flask
 
 # Rest Api
 
-Для отправки файла и получения id, по которому можно будет получить json (POST)
+#### Для отправки файла и получения id, по которому можно будет получить json (POST)
 http://localhost:5000/send_file
-Для отправки файла и получения json ответа (GET)
+#### Для отправки файла и получения json ответа (GET)
 http://localhost:5000/get_json_by_file
 
-Для отправки id и получения json ответа (GET)
+#### Для отправки id и получения json ответа (GET)
 http://localhost:5000/get_json_by_id
 
-Пример содержимого входного файла:
+#### Пример содержимого входного файла:
 #0\n
 1\r
 2\r\n
@@ -29,10 +29,10 @@ http://localhost:5000/get_json_by_id
 ##9\r
 #10\r\n
 
-Пример запроса:
+#### Пример запроса:
 curl -i -H "Content-Type: application/json" -X GET -d "{"""id""":6}" http://localhost:5000/get_json_by_id
 
-Пример ответа:
+#### Пример ответа:
 {
     "lines": ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10"], 
     "structure": [
