@@ -1,10 +1,10 @@
 # Запуск
 
-python app.py
+## python app.py
 
 
-Для запуска нужен модуль Flask
-pip install Flask
+Для запуска нужен модуль Flask. Чтобы установить:
+### pip install Flask
 
 # Rest Api
 
